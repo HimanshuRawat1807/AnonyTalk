@@ -1,0 +1,24 @@
+{
+  "name": "anonytalkbackend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "Himanshu Rawat",
+  "license": "ISC",
+  "description": "AnonyTalk is an anonymous platform where users can share thoughts, ask questions, and interact without revealing identity. It offers unique post links, replies with login, SMS/in-app notifications,…",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HimanshuRawat1807/AnonyTalk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/HimanshuRawat1807/AnonyTalk/issues"
+  },
+  "homepage": "https://github.com/HimanshuRawat1807/AnonyTalk#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
