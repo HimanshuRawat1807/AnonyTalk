@@ -1,0 +1,6 @@
+
+
+const createPost =  (req,res)=>{
+
+   
+}
