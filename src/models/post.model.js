@@ -26,6 +26,7 @@ const postSchema = new mongoose.Schema(
     repliesCount: {
       type: Number,
       default: 0,
+      min:0
     },
 
     // 🚫 optional control
@@ -33,10 +34,18 @@ const postSchema = new mongoose.Schema(
       type: Boolean,
       default: false,
     },
+     expiresAt: {
+      type: Date,
+      // default: () => new Date(Date.now() + 24 * 60 * 60 * 1000),
+      default: () => new Date(Date.now() +  2 * 60 * 1000),
+      index: { expires: 0 },
+    },
   },
   {
     timestamps: true, // createdAt, updatedAt auto
   }
 );
 
-export default mongoose.model("Post", postSchema);
+const Post = mongoose.model("Post", postSchema) 
+
+export default Post;

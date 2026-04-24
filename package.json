@@ -20,6 +20,9 @@
   },
   "homepage": "https://github.com/HimanshuRawat1807/AnonyTalk#readme",
   "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
     "dotenv": "^17.4.1",
     "express": "^5.2.1",
     "mongoose": "^9.4.1"

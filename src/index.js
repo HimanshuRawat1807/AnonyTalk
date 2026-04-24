@@ -1,5 +1,6 @@
 import dotenv from "dotenv";
-import express from "express"
+// import express from "express"
+import {app} from "./app.js"
 import connectionDB from "./db/config.js";
 
 dotenv.config({
@@ -7,9 +8,8 @@ dotenv.config({
 });
 
 
-const app = express()
+// const app = express();
 const PORT =  process.env.PORT ||  3000;
-
 
 const  startServer = () => {
 
@@ -26,6 +26,11 @@ const  startServer = () => {
 };
 
 startServer();
+
+
+
+
+
 
 
 
